@@ -1,0 +1,54 @@
+Autor Miguel Angel Fernandez Graciani
+fecha : 2023-10-10
+Ultima actualizacion
+    - 2023-11-20 :
+    - 2024-10-01 :
+
+	- Para incluir ejemplos de uso de XML :
+
+	- Este documento pretende documentar el estado de el proyecto ACC para la asignatura de SMA (DSI de la UCLM)
+	
+	- El proyecto Agente Cambia Cromos (ACC) es un ejercicio práctico con el que se pretende mostrar la problemática asociada 
+	al desarrollo de los sistemas multiagentes (SMA) en la red de internet
+	
+	- La información asociada al problema que se resuelve puede encontrarse en la documentación de la asignatura.
+	
+	- La documentacion de desarrollo se encuentra principalmente como comentarios en el mismo código 
+	
+	- Este documento simplemente sirve como información general, mostrando algunos aspectos globales e indicando
+	donde puedes encontrar ejemplos de programacion de funcionalidades concretas
+	
+	- PARA EJECUTAR EL SISTEMA MULTIAGENTE
+	
+		- Ver comentarios de la clase "arranca_agente"
+	
+	
+	- TRATAMIENTO DEL XML Y DOM
+		Para este fin se han incluido una serie de objetos en  la clase ACC, que se generan en este objeto, pero se utilizan despues
+		en donde son necesarios. Estos son :
+		
+				// Herramientas para generar y manejar objetos DOM
+				private DocumentBuilderFactory dom_factory = null;
+				protected DocumentBuilder dom_builder = null;
+				
+				// Heramientas para validar documentos XML
+				private SchemaFactory factory_esquema = null;
+				private Schema este_schema = null;
+				protected Validator validador_xml = null;
+				
+				// Herramientas para pasar de DOM a string
+				private TransformerFactory xml_transformerFactory = null;
+				protected Transformer xml_transformer = null;
+	
+		- Ejemplo para conversion XML texto a DOM (validando contra un esquema)
+				- Ver clases "RecibeTcp" y "RecibeUdp"
+	
+		- Ejemplo para conversion XML DOM a texto (validando contra un esquema)
+			- Ver clases "Enviar"
+
+		- Ejemplo parae generación de DOM XML (validando contra un esquema)
+			- Ver el metodo "notificaNacimiento()" de la clase "Acc"
+			
+		- Ejemplo para analizar el contenido de un documento DOM XML (validando contra un esquema)
+			- Ver el metodo "recogeMensajeRecibido()" de la clase "FuncionMonitor"
+			

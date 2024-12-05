@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename source module &apos;walkersCompetitonData.php&apos; to &apos;acc_Data.php&apos;&#x0D;&#x0A;- Original element: &apos;(default package)\walkersCompetitonData.php&apos;&#x0D;&#x0A;- Renamed element: &apos;(default package)\acc_Data.php&apos;" description="Rename source module &apos;walkersCompetitonData.php&apos;" flags="589830" id="org.eclipse.dltk.ui.rename.sourcemodule" input="/&lt;{walkersCompetitonData.php" name="acc_Data.php" stamp="1732822438634" version="1.0"/>
+</session>
